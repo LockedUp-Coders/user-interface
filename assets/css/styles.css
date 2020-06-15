@@ -1,11 +1,24 @@
- .fa{
-        margin: 0rem 0.5rem 0 0;
-    }
- .btn{
-        margin: 5px 0;
-        font-size: 15px;
-        border-radius: 70px;
-        text-indent: 10px;
-        font-weight: normal;
-        text-align: center;		
-    }
+.fa,
+.fas {
+  margin-right: 0.5rem;
+}
+.btn {
+  margin: 5px 0;
+  font-size: 15px;
+  border-radius: 70px;
+  text-indent: 10px;
+  font-weight: normal;
+  text-align: center;
+}
+.signup-oauth .fa-facebook:hover {
+  color: #4267b2;
+  transition: all 0.2s ease-in-out;
+}
+.signup-oauth .fa-google:hover {
+  color: #de5246;
+  transition: all 0.2s ease-in-out;
+}
+.signup-oauth .fa-twitter:hover {
+  color: #1DA1F2;
+  transition: all 0.2s ease-in-out;
+}
