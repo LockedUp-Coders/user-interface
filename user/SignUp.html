@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!--fontawsome icons-->
+    <link href="../assets/css/fontawesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!--jumbotron-->
+
+    <div class="text-center jumbotron">
+      <h1 class="display-4">Create Account</h1>
+      <br />
+      <p class="lead">Get connected to your nostalgic friends</p>
+    </div>
+
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-6 col-sm-12 card pl-3 pr-3">
+          <!--input-form card-->
+          <div class="card-body">
+            <h4 class="card-title">Sign Up</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Sign Up with E-mail</h6>
+            <form>
+              <div class="form-group">
+                <label for="email"
+                  ><i class="fas fa-envelope" id="signup-icons"></i>
+                  E-mail</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="example@someone.com"
+                  required
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="username"
+                  ><i class="fas fa-user-circle" id="signup-icons"></i>
+                  Username</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username"
+                  required
+                  name="username"
+                />
+              </div>
+              <div class="form-group">
+                <label for="pass"
+                  ><i class="fas fa-unlock" id="signup-icons"></i
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  name="pass"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cpass"
+                  ><i class="fas fa-unlock-alt" id="signup-icons"></i>Confirm
+                  Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                  name="cpass"
+                />
+              </div>
+              <div
+                class="form-group d-flex flex-column justify-content-center align-tems-center"
+              >
+                <button
+                  type="button"
+                  class="btn btn-primary btn-block rounded-pill"
+                >
+                  Create Account
+                </button>
+                <hr class="my-2" />
+                <h6 class="card-subtitle mb-2 text-muted text-center">
+                  or use your favorite social media
+                </h6>
+                <!--O Auth  using social media-->
+                <div
+                  class="row d-flex align-tems-center signup-oauth"
+                  style="justify-content: space-evenly;"
+                >
+                  <i
+                    class="fab fa-facebook fa-3x border rounded-circle p-3 border-dark"
+                    id=""
+                  ></i>
+                  <i
+                    class="fab fa-twitter fa-3x border rounded-circle p-3 border-dark"
+                  ></i>
+                  <i
+                    class="fab fa-google fa-3x border rounded-circle p-3 border-dark"
+                  ></i>
+                </div>
+              </div>
+              <small class="card-subtitle mb-2 text-muted font-weight-bold"
+                >Already on Nostalgify?
+                <a href="#" class="card-link">Log In</a></small
+              >
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center align-tems-center">
+          <img
+            src="../assets/images/undraw_welcome_cats_thqn.svg"
+            width="100%"
+            alt="welcome"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
