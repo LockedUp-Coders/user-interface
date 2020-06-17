@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid" style="padding: 0px;">
       <div class="d-flex flex-column align-items-center justify-content-center">
         <img
-          src="https://picsum.photos/1080/350/?blur"
+          src="https://picsum.photos/1800/350/?blur"
           class="img-fluid"
           alt="org image"
           style="max-width: 100%; height: auto;"
@@ -41,14 +41,30 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row m-3">
         <div
           class="col-lg-6 col-sm-12 d-flex justify-content-center flex-column"
         >
-          <!-- about card -->
-          <div class="card bg-light">
+          <!-- details card -->
+          <div class="card m-2">
+            <div class="card-header bg-secondary text-light">
+              <i class="fas fa-list-alt"></i>Details
+            </div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Established - 1984</li>
+                <li class="list-group-item">Current NIRF rank #15</li>
+                <li class="list-group-item">on Nostalgify since 2020</li>
+                <li class="list-group-item">Lorem ipsum, dolor sit </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <!-- About -->
+          <div class="card bg-light m-2">
             <div class="card-header bg-primary text-light">
-              <i class="fa fa-users"></i>ABOUT
+              <i class="fa fa-info-circle"></i>ABOUT
             </div>
             <div class="card-body">
               <h5 class="card-title">some heading</h5>
@@ -67,31 +83,141 @@
             </div>
           </div>
         </div>
-        <!-- conatct card -->
-        <div
-          class="card bg-light col-lg-6 col-sm-12 d-flex justify-content-center flex-column align-items-center"
-        >
-          <h2>Follow Us on</h2>
-          <div>
-            <i class="fab fa-facebook fa-3x m-1" style="color: #4267b2;"></i>
-            <i class="fab fa-linkedin fa-3x m-1" style="color: #0072b1;"></i>
-            <i class="fab fa-google fa-3x m-1" style="color: #de5246;"></i>
-            <i class="fab fa-twitter fa-3x m-1" style="color: #1da1f2;"></i>
+      </div>
+      <div class="row m-3">
+        <div class="col-lg-8 col-sm-12">
+          <!--  -->
+          <div class="card m-2">
+            <div class="card-header bg-transparent">
+              <i class="fa fa-photo-video"></i>POSTS
+            </div>
+            <div class="card-body d-flex" style="overflow-x: scroll;overflow-y: hidden;height: 300px">
+              <img src="https://picsum.photos/250?random=1" class="rounded shadow m-1" alt="">
+              <img src="https://picsum.photos/250?random=2" class="rounded shadow m-1" alt="">
+              <img src="https://picsum.photos/250?random=3" class="rounded shadow m-1" alt="">
+              <img src="https://picsum.photos/250?random=4" class="rounded shadow m-1" alt="">
+              <img src="https://picsum.photos/250?random=5" class="rounded shadow m-1" alt="">
+              <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+            <div class="card-footer text-muted">
+              last posted -2 days ago <button class="btn btn-primary rounded"> all posts</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <!-- members -->
+          <div class="card bg-light m-2">
+            <div class="card-header bg-dark text-light text-uppercase d-block">
+              <i class="fa fa-users"></i> MEMBERS
+            </div>
+            <div class="card-body">
+              <img
+                src="https://randomuser.me/api/portraits/women/64.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/men/64.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/men/41.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/women/41.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/men/46.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/men/44.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/women/54.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/men/54.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/women/50.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/men/51.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/women/51.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/women/52.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/men/1.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+              <img
+                src="https://randomuser.me/api/portraits/men/4.jpg"
+                alt=""
+                class="rounded-circle"
+                width="75px"
+              />
+            </div>
+            <div class="card-footer text-muted">
+              <button type="button" class="btn btn-primary rounded">
+                see all members
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row my-3">
+      <div class="row m-3">
         <!-- map -->
-        <div class="col-lg-8">
+        <div class="col-lg-6 col-sm-12">
           <img
             src="https://blog.capterra.com/wp-content/uploads/2019/10/GoogleMapsUSA.png"
-            class="img-fluid rounded"
+            class="img-fluid rounded m-2"
             alt=""
           />
         </div>
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-6 col-sm-12">
           <!-- address card -->
-          <div class="card bg-light" style="height: 100%; width: 100%;">
+          <div class="card bg-light m-2" style="height: 100%;">
             <div class="card-header bg-success text-white text-uppercase">
               <i class="fa fa-home"></i> Address
             </div>
@@ -114,6 +240,22 @@
                 style="text-decoration: none;"
                 ><i class="fa fa-envelope fa-2x"></i>orgmail@gmail.com</a
               >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-3">
+        <!-- conatct card -->
+        <div class="col-lg-12 col-sm-12">
+          <div
+            class="card bg-light d-flex justify-content-center flex-column align-items-center m-2 p-2"
+          >
+            <h2>Follow Us on</h2>
+            <div>
+              <i class="fab fa-facebook fa-3x m-1" style="color: #4267b2;"></i>
+              <i class="fab fa-linkedin fa-3x m-1" style="color: #0072b1;"></i>
+              <i class="fab fa-google fa-3x m-1" style="color: #de5246;"></i>
+              <i class="fab fa-twitter fa-3x m-1" style="color: #1da1f2;"></i>
             </div>
           </div>
         </div>
