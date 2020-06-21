@@ -1,0 +1,19 @@
+.profile-background img {
+  width: 100%;
+  height: 310px;
+}
+.profile-info-left {
+  position: relative;
+  top: -92px;
+  max-height:450px;
+}
+.profile-info-left h2 {
+  font-family: "josefinslab-semibold";
+  margin-bottom: 30px;
+}
+.profile-info-left .section {
+  margin-top: 50px;
+}
+.about{
+margin-top:60px;
+}
