@@ -1,0 +1,35 @@
+.rounded-circle{
+  height: 190px;
+  width: 220px;
+}
+h1{
+  color: #FFFFFF;
+  font-size: 90px !important;
+  text-align: center;        
+  margin-top: 90px !important;
+}
+.container-fluid{
+  margin-bottom: 20px;
+}
+.ourTeam-heading {
+  background: url(http://demo.thedevelovers.com/dashboard/queenadmin-1.2/assets/img/city.jpg);
+  height: 300px;
+  width: 100%;
+  background-size: 100% 100%;
+} 
+.card.hovercard .avatar {
+ position: relative;
+ top: -50px;
+ margin-bottom: -50px;
+}
+.hovercard{
+ text-align: center;
+ padding-bottom: 20px;
+ margin-top:50px;
+ border-style: solid 10px !important;
+} 
+.cardheader {
+  background-size: cover;
+ height: 135px;
+ position: center;
+}
