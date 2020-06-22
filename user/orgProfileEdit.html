@@ -1,0 +1,209 @@
+<html>
+<title>Update Profile</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+</head>
+<style>
+  .account-settings-background {
+    margin: -30px -30px 0 -30px;
+  }
+
+  .account-settings-background img {
+    width: 100%;
+    height: 310px;
+  }
+
+  .account-settings-info-left {
+    position: relative;
+    top: -92px;
+    max-height: 480px;
+  }
+
+  .account-settings-info-left img.avatar {
+    border: 2px solid #fff;
+  }
+
+  .account-settings-info-left h2 {
+    font-family: "josefinslab-semibold";
+    margin-bottom: 30px;
+  }
+
+  .account-settings-info-left .section {
+    margin-top: 50px;
+  }
+
+  .account-settings-info-left .section h3 {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  .about {
+    margin-top: 50px;
+  }
+
+  .container .upload-cover {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+  .nav2 {
+
+    width: 66%;
+  }
+</style>
+
+<body>
+  <div class="container">
+    <div class="user-account-settings ">
+      <div class="account-settings-background UserName"><img
+          src="http://demo.thedevelovers.com/dashboard/queenadmin-1.2/assets/img/city.jpg"
+          alt="account-settings Header Background">
+
+        <div class="upload-cover">
+          <button type="button" class="btn btn-primary">Update Cover Picture</button>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm">
+          <div class="account-settings-info-left text-center">
+            <div class="text-center">
+              <img
+                src="data:image/png;base64,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"
+                alt="Avatar" class="avatar img-circle">
+              <h2>UserName</h2>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary">Update Profile Picture</button>
+            </div>
+            <div class="section">
+              <!-- Space can be used -->
+            </div>
+            <div class="section">
+              <!-- Space can be used -->
+            </div>
+          </div>
+        </div>
+
+        <div class="nav2">
+          <!--  Add Nav bar here -->
+
+          <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab"
+                aria-controls="general" aria-selected="true">General</a>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="security-tab" data-toggle="tab" href="#security" role="tab"
+                aria-controls="security" aria-selected="false">Security</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <br>
+            <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+              <!-- general Form -->
+
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <label for="fname">Organization</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Eg. Google">
+                  </div>
+                  <div class="col">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Email">
+                  </div>
+                  <div class="col">
+                    <label for="github">Website</label>
+                    <input type="text" class="form-control" id="github" placeholder="Eg. organization.com">
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col">
+                    <label for="fname">Location</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Eg. Bay Area">
+                  </div>
+                  <div class="col">
+                    <label for="fname">Contact No.</label>
+                    <input type="text" class="form-control" id="uname" placeholder="1800-nostalgify">
+                  </div>
+                </div>
+                <br>
+                <div class="mb-3">
+                  <label for="validationTextarea">About</label>
+                  <textarea class="form-control " id="validationTextarea" placeholder="About the company..."
+                    required></textarea>
+
+                </div>
+
+                <div class="col-sm-10">
+                  <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+              <!-- Security Form -->
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <label for="fname">New Password</label>
+                    <input type="Password" class="form-control" id="new-password" placeholder="New Password">
+                  </div>
+                  <div class="col">
+                    <label for="lname">Confirm Password</label>
+                    <input type="Password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                  </div>
+                </div>
+                <br>
+                <div class="col-sm-10">
+                  <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+              </form>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
