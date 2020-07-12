@@ -21,3 +21,20 @@
   color: #1DA1F2;
   transition: all 0.2s ease-in-out;
 }
+h1{
+  color: #FFFFFF;
+  font-size: 90px !important;
+  text-align: center;        
+  margin-top: 90px !important;
+}
+.heading {
+  background: url(http://demo.thedevelovers.com/dashboard/queenadmin-1.2/assets/img/city.jpg);
+  height: 300px;
+  width: 100%;
+} 
+.user{
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top:50px;
+  border-style: solid 10px !important;
+}
